@@ -1,2 +1,2 @@
 # app
-Client facing progressive web application for www.zerowaste.love
+Client facing progressive web application for http://zerowaste.love
