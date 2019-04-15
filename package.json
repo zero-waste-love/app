@@ -24,6 +24,7 @@
     "express": "^4.16.4",
     "firebase": "^5.8.3",
     "moment": "^2.24.0",
+    "node-fetch": "^2.3.0",
     "nuxt": "^2.6.1",
     "nuxt-client-init-module": "^0.1.4",
     "nuxt-validate": "^0.1.2",
