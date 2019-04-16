@@ -6,12 +6,16 @@ main(class='container-index')
   Menu(
     :menuData='menuData'
   )
+  Bookmark(
+    
+  )
 </template>
 
 
 <script>
 import Hero from '~/components/Hero.vue'
 import Menu from '~/components/Menu.vue'
+import Bookmark from '~/components/Bookmark.vue'
 import navigationData from '~/data/navigation.json'
 
 export default {
@@ -34,7 +38,8 @@ export default {
   },
   components: {
     Hero,
-    Menu
+    Menu,
+    Bookmark
   },
   data () {
     return {}
