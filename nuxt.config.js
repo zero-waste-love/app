@@ -60,8 +60,8 @@ module.exports = {
   ** Toast settings
   */
   toast: {
-    position: 'top-left',
-    duration: 2000
+    position: 'top-right',
+    duration: 2500
   },
 
 
