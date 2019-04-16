@@ -42,8 +42,8 @@ div(class='container-pin')
 
 <script>
 import productImage from '~/assets/images/product.jpg'
-import IconBookmark from '~/assets/svg/IconBookmark.svg'
-import IconBookmarkActive from '~/assets/svg/IconBookmarkActive.svg'
+import IconBookmark from '~/assets/svg/iconBookmark.svg'
+import IconBookmarkActive from '~/assets/svg/iconBookmarkActive.svg'
 
 
 export default {
