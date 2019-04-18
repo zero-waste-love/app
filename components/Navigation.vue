@@ -88,6 +88,7 @@ export default {
   z-index: 99
   top: 0
   padding: $unit $unit*10
+  margin-top: 20px
   background: $pri-cl
 
 .navigation
