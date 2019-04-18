@@ -47,17 +47,23 @@ module.exports = {
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
-
     '@nuxtjs/pwa',
-
     '@nuxtjs/style-resources',
-
+    '@nuxtjs/toast',
     'nuxt-validate',
-
     'nuxt-client-init-module',
-
-    'nuxt-vuex-router-sync',
+    'nuxt-vuex-router-sync'
   ],
+
+
+  /*
+  ** Toast settings
+  */
+  toast: {
+    position: 'top-right',
+    duration: 2500
+  },
+
 
   /*
   ** Style resource settings

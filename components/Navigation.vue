@@ -110,8 +110,8 @@ export default {
         transform: translateY(2px)
 
   &__link
-    text-transform: capitalize
     font-weight: $fw-bold
+    text-transform: capitalize
 
   &__button
     justify-self: end
@@ -122,6 +122,7 @@ export default {
     padding: $unit $unit*3
     border-radius: 6px
     font-weight: $fw-reg
+    text-transform: none
 
     &.success
       background: $sec-cl

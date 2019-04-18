@@ -14,7 +14,7 @@ div(class='container-menu')
         class='menu__item'
       )
         Pin(
-          :cardData='{ headline: "Introduction video", text: "Learn more about dental hygiene", image, author: "Zero Waste Love", authorWebsite: "authorwebsite.com", buttonText: "Watch video" }'
+          :cardData='{ headline: "Introduction video", text: "Learn more about dental hygiene", image, author: "Zero Waste Love", authorWebsite: "authorwebsite.com", buttonText: "Watch video", id: "tooth-paste--0" }'
           class='collective__pin'
         )
       slide(

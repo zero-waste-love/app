@@ -1,6 +1,5 @@
 <template lang='pug'>
 div(class='container-pin')
-
   div(
     class='pin'
   )
@@ -21,20 +20,37 @@ div(class='container-pin')
           target='_blank'
           class='pin__link'
         ) {{ cardData.author }}
+    div(class='pin__buttons')
       a(
         :href='cardData.authorWebsite'
         target='_blank'
         class='pin__button'
       ) {{ cardData.buttonText || 'Visit website' }}
+      a(class='pin__icon')
+        IconBookmark(
+          v-show='!bookmark'
+          @click='toggleBookmark'
+          class='pin__icon-svg'
+        )
+        IconBookmarkActive(
+          v-show='bookmark'
+          @click='toggleBookmark'
+          class='pin__icon-svg'
+        )
 </template>
 
 
 <script>
 import productImage from '~/assets/images/product.jpg'
+import IconBookmark from '~/assets/svg/iconBookmark.svg'
+import IconBookmarkActive from '~/assets/svg/iconBookmarkActive.svg'
 
 
 export default {
-  components: {},
+  components: {
+    IconBookmark,
+    IconBookmarkActive
+  },
   props: {
     cardData: {
       type: Object,
@@ -43,11 +59,60 @@ export default {
   },
   data () {
     return {
-      image: productImage
+      image: productImage,
+      bookmark: false
     }
   },
   computed: {},
-  methods: {}
+  methods: {
+    setBookmark () {
+      console.log('cardData: ', this.cardData)
+      if (window.localStorage && localStorage.getItem('pinBookmark')) {
+        const bookmarkItem = JSON.parse(localStorage.getItem('pinBookmark'))
+        console.log('bookmarkItem: ', bookmarkItem)
+        bookmarkItem[this.cardData.id] = this.bookmark
+        localStorage.setItem('pinBookmark', JSON.stringify(bookmarkItem))
+      }
+      else if (window.localStorage && !localStorage.getItem('pinBookmark')) {
+        localStorage.setItem('pinBookmark', JSON.stringify({ [this.cardData.id]: this.bookmark }))
+      }
+      console.log('set -> ', localStorage.getItem('pinBookmark'))
+    },
+
+    destroyBookmark () {
+      if (localStorage.getItem('pinBookmark')) {
+        const bookmarkItem = JSON.parse(localStorage.getItem('pinBookmark'))
+        delete bookmarkItem[this.cardData.id]
+        localStorage.removeItem('pinBookmark')
+        localStorage.setItem('pinBookmark', JSON.stringify(bookmarkItem))
+      }
+    },
+
+    toggleBookmark () {
+      this.bookmark = !this.bookmark
+      this.bookmark ? this.setBookmark() : this.destroyBookmark()
+      console.log('bookmark: ', this.bookmark)
+      this.$emit('bookmark', this.bookmark)
+      this.bookmark &&
+        this.$toast.show('Bookmark added 📌', {
+          action : {
+            text: 'View',
+            onClick: (e, toastObject) => {
+              this.$router.push({ name: 'index'})
+            }
+          }
+        })
+      // this.$toast.show('Bookmark removed 🗑')
+    }
+  },
+  mounted () {
+    if (localStorage.getItem('pinBookmark')) {
+      const bookmarkItem = JSON.parse(localStorage.getItem('pinBookmark'))
+      console.log(bookmarkItem)
+      this.bookmark = !!bookmarkItem[this.cardData.id]
+      console.log(this.bookmark)
+    }
+  }
 }
 </script>
 
@@ -61,6 +126,7 @@ export default {
 .pin
   @extend %card-container
   display: grid
+  grid-gap: $unit*4 0
   align-items: end
   height: 100%
   padding: $unit*2
@@ -69,7 +135,6 @@ export default {
   &__image
     width: 100%
     box-shadow: $unit $unit $unit rgba(34, 34, 34, 0.1)
-    margin-bottom: $unit*4
     border-radius: 6px
 
   &__body
@@ -86,14 +151,28 @@ export default {
   &__link
     text-decoration: underline
 
+  &__buttons
+    display: grid
+    grid-auto-flow: column
+    grid-gap: $unit*2
+    align-items: center
+
   &__button
-    background: rgba(255, 255, 255, 0.6)
-    padding: $unit $unit*4
+    padding: $unit $unit*3
     border-radius: 6px
-    margin: $unit*3 auto 0 auto
     text-align: center
     display: block
+    width: min-content
     white-space: nowrap
     background: $pri-cl
     box-shadow: $unit $unit $unit rgba(34, 34, 34, 0.1)
+
+  &__icon
+    @extend %flex--row-center
+    width: $unit*3
+    height: $unit*3
+    justify-self: end
+
+    &-svg
+      width: 100%
 </style>
