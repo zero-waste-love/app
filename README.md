@@ -20,7 +20,7 @@ Web application for [Zero Waste Love](https://zero-waste-love.herokuapp.com/).
 Command | Description
 --- | ---
 `npm install` | Install dependencies.
-`npm ci` | Install dependencies (without altering package-lock.json).
+`npm ci` | Install dependencies (without altering `package-lock.json`).
 `npm run dev` | Build and serve locally.
 `npm run build` | Build `dist` files.
 
