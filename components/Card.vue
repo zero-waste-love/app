@@ -48,8 +48,9 @@ export default {
 
 
   &__headline
-    font-size: $fs1
     font-weight: $fw-bold
+    +mq-s
+      font-size: $fs1
 
   &__text
     @extend %text-copy

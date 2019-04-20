@@ -26,7 +26,7 @@ export default {
 
 <style lang='sass' scoped>
 .container-footer
-  padding: $unit*10 $unit*10 $unit*2 $unit*10
+  padding: $unit*10 0 $unit*2 0
 
 .footer
   @extend %container-content

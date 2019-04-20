@@ -19,7 +19,6 @@ div(
         to='/'
         class='navigation__link'
       )
-        | &#8249;&nbsp;
         img(
           v-lazy='logoImageSmall'
           class='navigation__logo-image navigation__logo-image--small'
@@ -87,7 +86,7 @@ export default {
   position: sticky
   z-index: 99
   top: 0
-  padding: $unit $unit*10
+  padding: $unit 0
   background: $pri-cl
 
 .navigation
