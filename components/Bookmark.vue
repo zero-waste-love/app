@@ -5,35 +5,19 @@ div(
 )
   div(class='bookmark')
     h2(class='bookmark__headline') Your favorites
-
-    carousel(
-      v-if='isBrowser'
-      class='bookmark__list'
-      :paginationEnabled='false'
-      :perPageCustom='[[0, 2], [520, 3], [1624, 4]]'
-      :scrollPerPage='false'
-      :speed='500'
+    Collective(
+      :pinData='pinData'
+      class='bookmark__collective'
     )
-      slide(
-        v-for='(card, i) in pinData'
-        :key='card.headline + i'
-        class='bookmark__item'
-      )
-        Pin(
-          :cardData='card'
-          @bookmark='getBookmarks'
-          class='bookmark__pin'
-        )
 </template>
 
 
 <script>
-import Pin from '~/components/Pin.vue'
-
+import Collective from '~/components/Collective.vue'
 
 export default {
   components: {
-    Pin
+    Collective
   },
   props: {},
   data () {
@@ -76,15 +60,16 @@ export default {
   margin-top: $unit*5
 
 .bookmark
-  @extend %container-content
+
 
   &__headline
+    @extend %container-content
     font-weight: $fw-bold
     font-size: $fs1
     margin-bottom: $unit*4
 
-  &__list
-
+  &__collective
+    padding: unset !important
 
   &__item
     padding: $unit*2 $unit*1.5
