@@ -80,6 +80,7 @@ export default {
   &__item
     display: grid
     grid-gap: $unit*2 0
+    overflow: hidden
 
   &__header
     @extend %container-main

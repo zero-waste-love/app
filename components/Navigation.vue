@@ -19,17 +19,19 @@ div(
         to='/'
         class='navigation__link'
       )
-        | &#8249;&nbsp;
         img(
           v-lazy='logoImageSmall'
           class='navigation__logo-image navigation__logo-image--small'
         )
-        | &nbsp;Start
+        | &nbsp;Home&nbsp;
       nuxt-link(
         v-show='$route.name === "category-collection"'
         :to='"/" + $route.params.category'
         class='navigation__link'
-      ) &nbsp;&#8249; {{ $route.params.category }}
+      )
+        span(class='navigation__icon')
+          IconChevron(class='navigation__icon-svg')
+        | &nbsp;{{ $route.params.category }}
 
     a(
       @click='copyText'
@@ -49,12 +51,14 @@ div(
 
 <script>
 import IconLogo from '~/assets/images/iconLogo.png'
+import IconChevron from '~/assets/svg/iconChevron.svg'
 import IconLogoSmall from '~/assets/images/iconLogoSmall.png'
 import { mapState, mapGetters, mapMutations } from 'vuex'
 
 
 export default {
   components: {
+    IconChevron
   },
   props: {},
   data () {
@@ -87,8 +91,7 @@ export default {
   position: sticky
   z-index: 99
   top: 0
-  padding: $unit $unit*10
-  margin-top: 20px
+  padding: $unit 0
   background: $pri-cl
 
 .navigation
@@ -98,6 +101,7 @@ export default {
   align-items: center
 
   &__breadcrumb
+    display: flex
 
 
   &__logo
@@ -112,6 +116,14 @@ export default {
   &__link
     font-weight: $fw-bold
     text-transform: capitalize
+    display: flex
+
+  &__icon
+    @extend %flex--row-center
+
+    &-svg
+      width: $unit*1.5
+      transform: rotate(-90deg)
 
   &__button
     justify-self: end
