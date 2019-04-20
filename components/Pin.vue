@@ -12,8 +12,8 @@ div(class='container-pin')
         v-if='cardData.headline'
         class='pin__headline'
       ) {{ cardData.headline }}
-      p(class='') {{ cardData.text }}
-      p(class='')
+      p(class='pin__text') {{ cardData.text }}
+      p(class='pin__author')
         | by&nbsp;
         a(
           :href='cardData.authorWebsite'
@@ -125,20 +125,51 @@ export default {
 
 .pin
   @extend %card-container
-  display: grid
-  grid-gap: $unit*4 0
-  align-items: end
   height: 100%
+  min-height: $unit*16
+  display: grid
+  grid-template-columns: 1fr auto
+  grid-template-rows: auto auto
+  grid-gap: $unit*4 $unit*2
   padding: $unit*2
   background: rgba(255, 255, 255, 1)
+  +mq-m
+    grid-template-rows: unset
+    grid-template-columns: unset
+    grid-auto-flow: row
 
   &__image
-    width: 100%
+    width: $unit*7
+    display: none
     box-shadow: $unit $unit $unit rgba(34, 34, 34, 0.1)
     border-radius: 6px
+    justify-self: end
+    grid-row: 1 / 2
+    grid-column: 2 / 3
+    +mq-xs
+      display: unset
+      width: $unit*10
+    +mq(560)
+      display: none
+    +mq-s
+      display: unset
+      grid-column: unset
+    +mq-m
+      grid-row: unset
+      grid-column: unset
+      width: 100%
 
   &__body
-    // padding: 0 $unit*2
+    display: flex
+    flex-direction: column
+    text-overflow: ellipsis
+    grid-row: 1 / 2
+    grid-column: 1 / 2
+    +mq-s
+      height: unset
+    +mq-m
+      grid-row: unset
+      grid-column: unset
 
   &__headline
     font-size: $fs
@@ -147,15 +178,26 @@ export default {
   &__text
     @extend %text-copy
     margin-top: $unit
+    text-overflow: ellipsis
+
+  &__author
+    text-overflow: ellipsis
 
   &__link
     text-decoration: underline
+    text-overflow: ellipsis
 
   &__buttons
+    grid-row: 2 / 3
+    grid-column: 1 / 3
     display: grid
     grid-auto-flow: column
     grid-gap: $unit*2
+    align-self: end
     align-items: center
+    +mq-m
+      grid-row: unset
+      grid-column: unset
 
   &__button
     padding: $unit $unit*3

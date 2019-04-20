@@ -46,8 +46,13 @@ export default {
 
   &__list
     display: grid
-    grid-template-columns: repeat(3, 1fr)
-    grid-gap: $unit*4
+    grid-auto-rows: auto
+    grid-gap: $unit*3
+    +mq(560)
+      grid-template-columns: repeat(2, 1fr)
+    +mq-m
+      grid-template-columns: repeat(3, 1fr)
+      grid-gap: $unit*4
 
   &__item
 

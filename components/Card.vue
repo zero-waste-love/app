@@ -40,6 +40,7 @@ export default {
 
 .card
   @extend %card-container
+  min-height: $unit*20
   display: grid
   align-items: end
   height: 100%
@@ -49,8 +50,7 @@ export default {
 
   &__headline
     font-weight: $fw-bold
-    +mq-s
-      font-size: $fs1
+    font-size: $fs1
 
   &__text
     @extend %text-copy
