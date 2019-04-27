@@ -7,7 +7,7 @@ main(class='container-index')
     :menuData='menuData'
   )
   Bookmark(
-    
+
   )
 </template>
 
@@ -21,11 +21,11 @@ import navigationData from '~/data/navigation.json'
 export default {
   async asyncData ({ params, store }) {
     const categories = await Promise.all(
-      navigationData.category.map(async id => {
-        const data = await import(`~/data/category/${id}.json`)
+      navigationData.topic.map(async id => {
+        const data = await import(`~/data/topic/${id}.json`)
         const subCategory = await Promise.all(
           data.subCategory.map(async subId =>
-            await import(`~/data/subCategory/${subId}.json`)
+            await import(`~/data/category/${subId}.json`)
           )
         )
         return { ...data, id, subCategory }

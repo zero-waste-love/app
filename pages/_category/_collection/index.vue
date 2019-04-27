@@ -21,7 +21,7 @@ import Collective from '~/components/Collective.vue'
 
 export default {
   async asyncData ({ params, store }) {
-    const collection = await import(`~/data/collection/${params.collection}.json`)
+    const collection = await import(`~/data/subCategory/${params.collection}.json`)
     const pin = await Promise.all(
       collection.pin.map(async id => {
         const data = await import(`~/data/pin/${id}.json`)
@@ -46,7 +46,7 @@ export default {
   methods: {},
   async beforeRouteEnter (to, from, next) {
     if (to.params.category) {
-      const category = await import(`~/data/category/${to.params.category}.json`)
+      const category = await import(`~/data/topic/${to.params.category}.json`)
       const root = window.document.documentElement
       root.style.setProperty('--background-color', category.color)
     }
