@@ -1,7 +1,6 @@
 {
-  "headline": "Dental",
-  "text": "tetsing",
-  "collection": [
+  "handle": "dental",
+  "subCategory": [
     "floss",
     "tooth-paste",
     "tongue-scraper"

@@ -4,5 +4,9 @@ export default {
   },
   TOGGLE_MENU ({ menu }) {
     menu.isOpen = !menu.isOpen
+  },
+  SET_DATA (store, { data }) {
+    store.data = data
+    console.log('data: ', store.data)
   }
 }

@@ -8,8 +8,8 @@ div(class='container-menu')
       )
       Card(
         v-for='(card, i) in menuData'
-        :key='card.headline + i'
-        :cardData='{ id: card.id, headline: card.headline, path: $route.params.category + "/" + card.id }'
+        :key='card.handle + i'
+        :cardData='{ headline: $t("subCategory." + card.handle + ".title"), id: card.handle, path: $route.params.topic + "/" + card.handle }'
         class='app-slider__slide menu__card'
       )
 </template>

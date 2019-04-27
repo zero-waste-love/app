@@ -1,12 +1,6 @@
 {
-  "headline": "Toothpaste",
-  "text": "Alternative toothpastes are available as paste, powder, solid form and tablets which you can buy in local zero-waste stores or in online shops which are focussed on alternative products or even at Amazon.",
-  "id": "tooth-paste",
-  "pin": [
-    "tooth-paste--0",
-    "tooth-paste--1",
-    "tooth-paste--2",
-    "tooth-paste--3",
-    "tooth-paste--4"
-  ]
+  "handle": "tooth-paste",
+  "imageHero": "",
+  "imageIcon": "",
+  "collectionHandle": "tooth-paste"
 }

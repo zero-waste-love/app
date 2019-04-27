@@ -1,0 +1,36 @@
+{
+  "links": {
+    "home": "Home",
+    "share": "Share"
+  },
+  "index": {
+    "title": "Lets get started",
+    "body": "Mingle around and find alternatives for every-day products"
+  },
+  "topic": {
+    "bathroom": {
+      "title": "Bathroom",
+      "body": "Reducing waste in the bathroom is one of the easiest to achieve since there are already many alternatives available"
+    },
+    "bedroom": {
+      "title": "Bedroom",
+      "body": "Reducing waste in the bathroom is one of the easiest to achieve since there are already many alternatives available"
+    },
+    "kitchen": {
+      "title": "Kitchen",
+      "body": "Reducing waste in the bathroom is one of the easiest to achieve since there are already many alternatives available"
+    }
+  },
+  "category": {
+    "body": {
+      "title": "Body",
+      "body": "Body testing"
+    }
+  },
+  "subCategory": {
+    "tooth-paste": {
+      "title": "Toothpaste",
+      "body": "Alternative toothpastes are available as paste, powder, solid form and tablets which you can buy in local zero-waste stores or in online shops which are focussed on alternative products or even at Amazon."
+    }
+  }
+}

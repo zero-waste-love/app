@@ -1,7 +1,6 @@
 {
-  "headline": "Body",
-  "text": "Body testing",
-  "collection": [
+  "handle": "body",
+  "subCategory": [
     "floss",
     "mouth-wash",
     "tooth-brush",

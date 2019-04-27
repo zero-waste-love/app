@@ -1,14 +1,14 @@
 <template lang='pug'>
 main(class='container-page')
-
+  pre {{ $route.params }}
   section(class='page')
     Hero(
-      :heroData='{ headline: collection.headline, text: collection.text }'
+      :heroData='{ headline: $t("subCategory." + $route.params.collection + ".title"), text: $t("subCategory." + $route.params.collection + ".body") }'
     )
-    Collective(
-      :pinData='pin'
-      class=''
-    )
+    //- Collective(
+    //-   :pinData='pin'
+    //-   class=''
+    //- )
 
 </template>
 
@@ -21,18 +21,7 @@ import Collective from '~/components/Collective.vue'
 
 export default {
   async asyncData ({ params, store }) {
-    const collection = await import(`~/data/subCategory/${params.collection}.json`)
-    const pin = await Promise.all(
-      collection.pin.map(async id => {
-        const data = await import(`~/data/pin/${id}.json`)
-        return { ...data, id }
-      })
-    )
-    console.log('collection: ', collection)
-    return {
-      collection,
-      pin
-    }
+
   },
   components: {
     Hero,
@@ -45,10 +34,10 @@ export default {
   mounted () {},
   methods: {},
   async beforeRouteEnter (to, from, next) {
-    if (to.params.category) {
-      const category = await import(`~/data/topic/${to.params.category}.json`)
+    if (!!to.params.topic) {
+      const topic = await import(`~/data/topic/${to.params.topic}.json`)
       const root = window.document.documentElement
-      root.style.setProperty('--background-color', category.color)
+      root.style.setProperty('--background-color', topic.color)
     }
     next()
   }

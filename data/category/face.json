@@ -1,7 +1,6 @@
 {
-  "headline": "Face",
-  "text": "Face testing",
-  "collection": [
+  "handle": "face",
+  "subCategory": [
     "floss",
     "tooth-paste"
   ]

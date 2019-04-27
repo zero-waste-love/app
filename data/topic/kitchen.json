@@ -1,10 +1,11 @@
 {
-  "headline": "Kitchen",
-  "text": "Reducing waste in the bathroom is one of the easiest to achieve since there are already many alternatives available",
-  "subCategory": [
+  "handle": "kitchen",
+  "color": "#F78985",
+  "imageHero": "",
+  "imageIcon": "",
+  "category": [
     "body",
     "dental",
     "face"
-  ],
-  "color": "#F78985"
+  ]
 }

@@ -1,10 +1,11 @@
 {
-  "headline": "Bathroom",
-  "text": "Reducing waste in the bathroom is one of the easiest to achieve since there are already many alternatives available",
-  "subCategory": [
+  "handle": "bathroom",
+  "color": "#B6D7D8",
+  "imageHero": "",
+  "imageIcon": "",
+  "category": [
     "body",
     "dental",
     "face"
-  ],
-  "color": "#B6D7D8"
+  ]
 }

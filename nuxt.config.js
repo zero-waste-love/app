@@ -52,7 +52,23 @@ module.exports = {
     '@nuxtjs/toast',
     'nuxt-validate',
     'nuxt-client-init-module',
-    'nuxt-vuex-router-sync'
+    'nuxt-vuex-router-sync',
+    ['nuxt-i18n', {
+      locales: [
+        {
+          code: 'en',
+          iso: 'en-US'
+        }
+      ],
+      defaultLocale: 'en',
+      parsePages: false,
+      vueI18n: {
+        fallbackLocale: 'en',
+        messages: {
+          en: require('./locales/en.json')
+        }
+      }
+    }]
   ],
 
 

@@ -24,7 +24,7 @@ const createStore = () => {
     actions: {
       async nuxtClientInit({ state, dispatch }, context) {
         try {
-          // dispatch('auth/watchAuthState')
+          dispatch('app/getData')
           return
         }
         catch (e) {

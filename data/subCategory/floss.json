@@ -1,9 +1,6 @@
 {
-  "headline": "Floss",
-  "text": "It's floss",
-  "id": "floss",
-  "pin": [
-    "tooth-paste--0",
-    "tooth-paste--1"
-  ]
+  "handle": "floss",
+  "imageHero": "",
+  "imageIcon": "",
+  "collectionHandle": "floss"
 }

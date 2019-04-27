@@ -1,10 +1,11 @@
 {
-  "headline": "Office",
-  "text": "Reducing waste in the bathroom is one of the easiest to achieve since there are already many alternatives available",
-  "subCategory": [
+  "handle": "office",
+  "color": "#C9CCE9",
+  "imageHero": "",
+  "imageIcon": "",
+  "category": [
     "body",
     "dental",
     "face"
-  ],
-  "color": "#C9CCE9"
+  ]
 }
