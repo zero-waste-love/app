@@ -26,4 +26,4 @@ Command | Description
 
 ## Content Management
 
-See [Content Management](https://github.com/zero-waste-love/app/wiki/Content-Management) documenation for more information.
+See [Content Management](https://github.com/zero-waste-love/app/wiki/Content-Management) documentation for more information.
