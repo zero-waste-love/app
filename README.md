@@ -26,22 +26,4 @@ Command | Description
 
 ## Content Management
 
-Content creation is focused in the `./data/` directory.
-
-### Hierarchy
-
-```
-category
---| subCategory
-----| collection
-------| pin
-```
-
-### Directory Description
-
-Directory | Description
---- | ---
-`category` | Broad zero waste spaces (_Bathroom_, _Kitchen_, etc).
-`subCategory` | General subject areas (_Body_, _Dental_, etc).
-`collection` | Specific subject areas (_Floss_, _Toothpaste_, etc).
-`pin` | Products/links of a specific subject.
+See [Content Management](https://github.com/zero-waste-love/app/wiki/Content-Management) documentation for more information.
