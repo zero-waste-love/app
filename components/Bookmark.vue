@@ -1,5 +1,6 @@
 <template lang='pug'>
 div(
+  v-show='bookmarks.length > 0'
   class='container-bookmark'
 )
   div(class='bookmark')
