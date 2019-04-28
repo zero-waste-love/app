@@ -1,27 +1,26 @@
 <template lang='pug'>
 main(class='container-page')
-  pre {{ $route.params }}
   section(class='page')
     Hero(
       :heroData='{ headline: $t("subCategory." + $route.params.collection + ".title"), text: $t("subCategory." + $route.params.collection + ".body") }'
     )
-    //- Collective(
-    //-   :pinData='pin'
-    //-   class=''
-    //- )
-
+    Collective(
+      :pinData='activeProducts'
+      class=''
+    )
 </template>
 
 
 <script>
-import { mapActions } from 'vuex'
+import { mapGetters, mapActions } from 'vuex'
 import Hero from '~/components/Hero.vue'
 import Collective from '~/components/Collective.vue'
 
 
 export default {
   async asyncData ({ params, store }) {
-
+    await store.dispatch('catalog/fetchCollection', params.collection)
+    return
   },
   components: {
     Hero,
@@ -30,14 +29,18 @@ export default {
   data () {
     return {}
   },
-  computed: {},
+  computed: {
+    ...mapGetters({
+      activeProducts: 'catalog/activeProducts'
+    })
+  },
   mounted () {},
   methods: {},
   async beforeRouteEnter (to, from, next) {
     if (!!to.params.topic) {
-      const topic = await import(`~/data/topic/${to.params.topic}.json`)
-      const root = window.document.documentElement
-      root.style.setProperty('--background-color', topic.color)
+      // const topic = await import(`~/data/topic/${to.params.topic}.json`)
+      // const root = window.document.documentElement
+      // root.style.setProperty('--background-color', topic.color)
     }
     next()
   }

@@ -66,7 +66,8 @@ module.exports = {
         fallbackLocale: 'en',
         messages: {
           en: require('./locales/en.json')
-        }
+        },
+        silentTranslationWarn: true
       }
     }]
   ],

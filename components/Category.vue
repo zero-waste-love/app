@@ -2,10 +2,10 @@
 div(class='container-menu')
   div(class='menu')
     AppSlider(class='menu__list')
-      Pin(
-        :cardData='{ headline: "Introduction video", text: "Learn more about dental hygiene", image, author: "Zero Waste Love", authorWebsite: "authorwebsite.com", buttonText: "Watch video", id: "tooth-paste--0" }'
-        class='app-slider__slide app-slider__slide--pin collective__pin'
-      )
+      //- Pin(
+      //-   :cardData='{ headline: "Introduction video", text: "Learn more about dental hygiene", image, author: "Zero Waste Love", authorWebsite: "authorwebsite.com", buttonText: "Watch video", id: "tooth-paste--0" }'
+      //-   class='app-slider__slide app-slider__slide--pin collective__pin'
+      //- )
       Card(
         v-for='(card, i) in menuData'
         :key='card.handle + i'

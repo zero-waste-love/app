@@ -26,11 +26,13 @@
     "firebase": "^5.8.3",
     "moment": "^2.24.0",
     "node-fetch": "^2.3.0",
+    "node-html-parser": "^1.1.15",
     "nuxt": "^2.6.2",
     "nuxt-client-init-module": "^0.1.4",
     "nuxt-i18n": "^5.10.0",
     "nuxt-validate": "^0.1.2",
     "nuxt-vuex-router-sync": "0.0.3",
+    "shopify-buy": "^1.0.2",
     "vue-carousel": "^0.18.0",
     "vue-lazyload": "^1.2.6",
     "vue-scrollto": "^2.13.0"

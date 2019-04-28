@@ -21,21 +21,8 @@ import { mapState } from 'vuex'
 
 export default {
   async asyncData ({ params, store }) {
-    // const categories = await Promise.all(
-    //   navigationData.topic.map(async id => {
-    //     const data = await import(`~/data/topic/${id}.json`)
-    //     const subCategory = await Promise.all(
-    //       data.subCategory.map(async subId =>
-    //         await import(`~/data/category/${subId}.json`)
-    //       )
-    //     )
-    //     return { ...data, id, subCategory }
-    //   })
-    // )
-    // return {
-    //   menuData: [], //categories,
-    //   heroData: { headline: $t('index.title'), text: 'Mingle around and find alternatives for every-day products' }
-    // }
+
+    return
   },
   components: {
     Hero,

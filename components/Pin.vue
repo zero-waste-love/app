@@ -4,25 +4,25 @@ div(class='container-pin')
     class='pin'
   )
     img(
-      v-lazy='image'
+      v-lazy='cardData.images[0].src'
       class='pin__image'
     )
     div(class='pin__body')
       h3(
-        v-if='cardData.headline'
+        v-if='cardData.title'
         class='pin__headline'
-      ) {{ cardData.headline }}
-      p(class='pin__text') {{ cardData.text }}
+      ) {{ cardData.title }}
+      p(class='pin__text') {{ cardData.description.body }}
       p(class='pin__author')
         | by&nbsp;
         a(
-          :href='cardData.authorWebsite'
+          :href='cardData.description.authorWebsite'
           target='_blank'
           class='pin__link'
-        ) {{ cardData.author }}
+        ) {{ cardData.description.author }}
     div(class='pin__buttons')
       a(
-        :href='cardData.authorWebsite'
+        :href='cardData.description.authorWebsite'
         target='_blank'
         class='pin__button'
       ) {{ cardData.buttonText || 'Visit website' }}
@@ -66,10 +66,8 @@ export default {
   computed: {},
   methods: {
     setBookmark () {
-      console.log('cardData: ', this.cardData)
       if (window.localStorage && localStorage.getItem('pinBookmark')) {
         const bookmarkItem = JSON.parse(localStorage.getItem('pinBookmark'))
-        console.log('bookmarkItem: ', bookmarkItem)
         bookmarkItem[this.cardData.id] = this.bookmark
         localStorage.setItem('pinBookmark', JSON.stringify(bookmarkItem))
       }
@@ -108,9 +106,7 @@ export default {
   mounted () {
     if (localStorage.getItem('pinBookmark')) {
       const bookmarkItem = JSON.parse(localStorage.getItem('pinBookmark'))
-      console.log(bookmarkItem)
       this.bookmark = !!bookmarkItem[this.cardData.id]
-      console.log(this.bookmark)
     }
   }
 }
