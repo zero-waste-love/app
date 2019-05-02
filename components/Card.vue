@@ -52,7 +52,6 @@ export default {
   min-height: $unit*20
   display: grid
   align-items: end
-  height: 100%
   padding: $unit*4
   background: rgba(255, 255, 255, 0.6)
 

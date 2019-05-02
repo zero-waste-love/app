@@ -24,13 +24,13 @@ div(
         )
         | &nbsp;{{ $t('links.home') }}&nbsp;
       nuxt-link(
-        v-show='$route.name === "topic-collection"'
-        :to='"/" + $route.params.category'
+        v-show='$route.params.topic && $route.params.collection'
+        :to='"/" + $route.params.topic'
         class='navigation__link'
       )
         span(class='navigation__icon')
           IconChevron(class='navigation__icon-svg')
-        | &nbsp;{{ $route.params.category }}
+        | &nbsp;{{ $route.params.topic }}
 
     a(
       @click='copyText'
