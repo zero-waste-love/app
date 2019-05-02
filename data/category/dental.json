@@ -2,7 +2,10 @@
   "handle": "dental",
   "subCategory": [
     "floss",
+    "mouth-wash",
+    "tongue-scraper",
+    "tooth-brush",
     "tooth-paste",
-    "tongue-scraper"
+    "dental-accessories"
   ]
 }

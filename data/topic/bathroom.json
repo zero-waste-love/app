@@ -2,10 +2,12 @@
   "handle": "bathroom",
   "color": "#B6D7D8",
   "imageHero": "",
-  "imageIcon": "",
+  "imageIcon": "illu-topic-bathroom",
   "category": [
     "body",
     "dental",
-    "face"
+    "face",
+    "hair",
+    "toiletry"
   ]
 }

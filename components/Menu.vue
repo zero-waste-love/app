@@ -8,7 +8,7 @@ div(class='container-menu')
         class='menu__item'
       )
         Card(
-          :cardData='{ headline: $t("topic." + card.handle + ".title"), id: card.handle, path: card.handle }'
+          :cardData='{ headline: $t("topic." + card.handle + ".title"), id: card.handle, path: card.handle, imageIcon: card.imageIcon }'
           :style='{ backgroundColor: card.color }'
           class='menu__card'
         )
