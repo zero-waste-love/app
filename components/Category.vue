@@ -50,9 +50,24 @@ export default {
 
 <style lang='sass' scoped>
 .container-menu
+  overflow-x: auto
+  display: flex
+  flex-wrap: nowrap
+  -webkit-overflow-scrolling: touch
+  +mq-s
+    overflow: unset
+    display: unset
+    flex-wrap: unset
 
+  &::-webkit-scrollbar
+    display: none
 
 .menu
+  flex: 0 0 auto
+  padding: 0 5%
+  +mq-s
+    flex: unset
+    padding: unset
 
   &__list
 
