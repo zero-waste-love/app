@@ -13,7 +13,10 @@ main(
         :key='card + i'
         class='page__item'
       )
-        header(class='page__header')
+        header(
+          v-show='category.length > 1'
+          class='page__header'
+        )
           h2(class='page__headline') {{ $t("category." + card.handle + ".title") }}
         Category(
           :menuData='card.subCategory'
