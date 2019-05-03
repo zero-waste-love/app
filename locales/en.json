@@ -1,0 +1,206 @@
+{
+  "links": {
+    "home": "Home",
+    "share": "Share"
+  },
+  "index": {
+    "title": "Lets get started",
+    "body": "Mingle around and find alternatives for every-day products"
+  },
+  "topic": {
+    "bathroom": {
+      "title": "Bathroom",
+      "body": "Reducing waste in the bathroom is one of the easiest to achieve since there are already many alternatives available"
+    },
+    "bedroom": {
+      "title": "Bedroom",
+      "body": "Reducing waste in the bathroom is one of the easiest to achieve since there are already many alternatives available"
+    },
+    "kitchen": {
+      "title": "Kitchen",
+      "body": "Reducing waste in the bathroom is one of the easiest to achieve since there are already many alternatives available"
+    }
+  },
+  "category": {
+    "body": {
+      "title": "Body"
+    },
+    "dental": {
+      "title": "Dental"
+    },
+    "face": {
+      "title": "Face"
+    },
+    "hair": {
+      "title": "Hair"
+    },
+    "nails": {
+      "title": "Nails"
+    },
+    "toiletry": {
+      "title": "Toiletry"
+    }
+  },
+  "subCategory": {
+    "appliances": {
+      "title": "Appliances",
+      "body": "Alternative toothpastes are available as paste, powder, solid form and tablets which you can buy in local zero-waste stores or in online shops which are focussed on alternative products or even at Amazon."
+    },
+    "beard": {
+      "title": "Beard",
+      "body": "Alternative toothpastes are available as paste, powder, solid form and tablets which you can buy in local zero-waste stores or in online shops which are focussed on alternative products or even at Amazon."
+    },
+    "bed-and-textiles": {
+      "title": "Bed & Textiles",
+      "body": "Alternative toothpastes are available as paste, powder, solid form and tablets which you can buy in local zero-waste stores or in online shops which are focussed on alternative products or even at Amazon."
+    },
+    "body-accessories": {
+      "title": "Accessories",
+      "body": "Alternative toothpastes are available as paste, powder, solid form and tablets which you can buy in local zero-waste stores or in online shops which are focussed on alternative products or even at Amazon."
+    },
+    "body-exfoliation-and-peeling": {
+      "title": "Exfoliation & Peeling",
+      "body": "Alternative toothpastes are available as paste, powder, solid form and tablets which you can buy in local zero-waste stores or in online shops which are focussed on alternative products or even at Amazon."
+    },
+    "brush": {
+      "title": "Brush",
+      "body": "Alternative toothpastes are available as paste, powder, solid form and tablets which you can buy in local zero-waste stores or in online shops which are focussed on alternative products or even at Amazon."
+    },
+    "cleaning-and-make-up-removal": {
+      "title": "Cleaning & Make-up Removal",
+      "body": "Alternative toothpastes are available as paste, powder, solid form and tablets which you can buy in local zero-waste stores or in online shops which are focussed on alternative products or even at Amazon."
+    },
+    "cloth-and-textiles": {
+      "title": "Cloth & Textiles",
+      "body": "Alternative toothpastes are available as paste, powder, solid form and tablets which you can buy in local zero-waste stores or in online shops which are focussed on alternative products or even at Amazon."
+    },
+    "clothes": {
+      "title": "Clothes",
+      "body": "Alternative toothpastes are available as paste, powder, solid form and tablets which you can buy in local zero-waste stores or in online shops which are focussed on alternative products or even at Amazon."
+    },
+    "conditioner": {
+      "title": "Conditioner",
+      "body": "Alternative toothpastes are available as paste, powder, solid form and tablets which you can buy in local zero-waste stores or in online shops which are focussed on alternative products or even at Amazon."
+    },
+    "condoms": {
+      "title": "Condoms",
+      "body": "Alternative toothpastes are available as paste, powder, solid form and tablets which you can buy in local zero-waste stores or in online shops which are focussed on alternative products or even at Amazon."
+    },
+    "cream-face-water-and-mask": {
+      "title": "Cream, Face Water & Mask",
+      "body": "Alternative toothpastes are available as paste, powder, solid form and tablets which you can buy in local zero-waste stores or in online shops which are focussed on alternative products or even at Amazon."
+    },
+    "cream": {
+      "title": "Cream",
+      "body": "Alternative toothpastes are available as paste, powder, solid form and tablets which you can buy in local zero-waste stores or in online shops which are focussed on alternative products or even at Amazon."
+    },
+    "cutlery": {
+      "title": "Cutlery",
+      "body": "Alternative toothpastes are available as paste, powder, solid form and tablets which you can buy in local zero-waste stores or in online shops which are focussed on alternative products or even at Amazon."
+    },
+    "dental-accessories": {
+      "title": "Accessories",
+      "body": "Alternative toothpastes are available as paste, powder, solid form and tablets which you can buy in local zero-waste stores or in online shops which are focussed on alternative products or even at Amazon."
+    },
+    "ear-cleaning": {
+      "title": "Ear Cleaning",
+      "body": "Alternative toothpastes are available as paste, powder, solid form and tablets which you can buy in local zero-waste stores or in online shops which are focussed on alternative products or even at Amazon."
+    },
+    "face-exfoliation-and-peeling": {
+      "title": "Exfoliation & Peeling",
+      "body": "Alternative toothpastes are available as paste, powder, solid form and tablets which you can buy in local zero-waste stores or in online shops which are focussed on alternative products or even at Amazon."
+    },
+    "female-hygiene": {
+      "title": "Female Hygiene",
+      "body": "Alternative toothpastes are available as paste, powder, solid form and tablets which you can buy in local zero-waste stores or in online shops which are focussed on alternative products or even at Amazon."
+    },
+    "floss": {
+      "title": "Floss",
+      "body": "Alternative toothpastes are available as paste, powder, solid form and tablets which you can buy in local zero-waste stores or in online shops which are focussed on alternative products or even at Amazon."
+    },
+    "food-storage": {
+      "title": "Food storage",
+      "body": "Alternative toothpastes are available as paste, powder, solid form and tablets which you can buy in local zero-waste stores or in online shops which are focussed on alternative products or even at Amazon."
+    },
+    "furniture": {
+      "title": "Furniture",
+      "body": "Alternative toothpastes are available as paste, powder, solid form and tablets which you can buy in local zero-waste stores or in online shops which are focussed on alternative products or even at Amazon."
+    },
+    "kitchen-cleaning": {
+      "title": "Kitchen cleaning",
+      "body": "Alternative toothpastes are available as paste, powder, solid form and tablets which you can buy in local zero-waste stores or in online shops which are focussed on alternative products or even at Amazon."
+    },
+    "lips": {
+      "title": "Lips",
+      "body": "Alternative toothpastes are available as paste, powder, solid form and tablets which you can buy in local zero-waste stores or in online shops which are focussed on alternative products or even at Amazon."
+    },
+    "lube-and-oils": {
+      "title": "Lube & Oils",
+      "body": "Alternative toothpastes are available as paste, powder, solid form and tablets which you can buy in local zero-waste stores or in online shops which are focussed on alternative products or even at Amazon."
+    },
+    "mask": {
+      "title": "Mask",
+      "body": "Alternative toothpastes are available as paste, powder, solid form and tablets which you can buy in local zero-waste stores or in online shops which are focussed on alternative products or even at Amazon."
+    },
+    "mouth-wash": {
+      "title": "Mouth Wash",
+      "body": "Alternative toothpastes are available as paste, powder, solid form and tablets which you can buy in local zero-waste stores or in online shops which are focussed on alternative products or even at Amazon."
+    },
+    "scents": {
+      "title": "Scents",
+      "body": "Alternative toothpastes are available as paste, powder, solid form and tablets which you can buy in local zero-waste stores or in online shops which are focussed on alternative products or even at Amazon."
+    },
+    "on-the-go": {
+      "title": "On the go",
+      "body": "Alternative toothpastes are available as paste, powder, solid form and tablets which you can buy in local zero-waste stores or in online shops which are focussed on alternative products or even at Amazon."
+    },
+    "shampoo": {
+      "title": "Shampoo",
+      "body": "Alternative toothpastes are available as paste, powder, solid form and tablets which you can buy in local zero-waste stores or in online shops which are focussed on alternative products or even at Amazon."
+    },
+    "shaving": {
+      "title": "Shaving",
+      "body": "Alternative toothpastes are available as paste, powder, solid form and tablets which you can buy in local zero-waste stores or in online shops which are focussed on alternative products or even at Amazon."
+    },
+    "shower-gel-and-soap": {
+      "title": "Shower Gel & Soap",
+      "body": "Alternative toothpastes are available as paste, powder, solid form and tablets which you can buy in local zero-waste stores or in online shops which are focussed on alternative products or even at Amazon."
+    },
+    "styling": {
+      "title": "Styling",
+      "body": "Alternative toothpastes are available as paste, powder, solid form and tablets which you can buy in local zero-waste stores or in online shops which are focussed on alternative products or even at Amazon."
+    },
+    "sunscreen": {
+      "title": "Sunscreen",
+      "body": "Alternative toothpastes are available as paste, powder, solid form and tablets which you can buy in local zero-waste stores or in online shops which are focussed on alternative products or even at Amazon."
+    },
+    "supplies": {
+      "title": "Supplies",
+      "body": "Alternative toothpastes are available as paste, powder, solid form and tablets which you can buy in local zero-waste stores or in online shops which are focussed on alternative products or even at Amazon."
+    },
+    "tableware": {
+      "title": "Tableware",
+      "body": "Alternative toothpastes are available as paste, powder, solid form and tablets which you can buy in local zero-waste stores or in online shops which are focussed on alternative products or even at Amazon."
+    },
+    "toilet-paper-and-bidet": {
+      "title": "Toilet paper & Bidet",
+      "body": "Alternative toothpastes are available as paste, powder, solid form and tablets which you can buy in local zero-waste stores or in online shops which are focussed on alternative products or even at Amazon."
+    },
+    "toiletry-cleaning": {
+      "title": "Toiletry cleaning",
+      "body": "Alternative toothpastes are available as paste, powder, solid form and tablets which you can buy in local zero-waste stores or in online shops which are focussed on alternative products or even at Amazon."
+    },
+    "tongue-scraper": {
+      "title": "Tongue Scraper",
+      "body": "Alternative toothpastes are available as paste, powder, solid form and tablets which you can buy in local zero-waste stores or in online shops which are focussed on alternative products or even at Amazon."
+    },
+    "tooth-brush": {
+      "title": "Tooth Brush",
+      "body": "Alternative toothpastes are available as paste, powder, solid form and tablets which you can buy in local zero-waste stores or in online shops which are focussed on alternative products or even at Amazon."
+    },
+    "tooth-paste": {
+      "title": "Toothpaste",
+      "body": "Alternative toothpastes are available as paste, powder, solid form and tablets which you can buy in local zero-waste stores or in online shops which are focussed on alternative products or even at Amazon."
+    }
+  }
+}

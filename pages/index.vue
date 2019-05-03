@@ -1,13 +1,13 @@
 <template lang='pug'>
 main(class='container-index')
   Hero(
-    :heroData='heroData'
+    :heroData='{ headline: $t("index.title"), text: $t("index.body") }'
   )
   Menu(
-    :menuData='menuData'
+    :menuData='topic'
   )
   Bookmark(
-    
+
   )
 </template>
 
@@ -17,24 +17,12 @@ import Hero from '~/components/Hero.vue'
 import Menu from '~/components/Menu.vue'
 import Bookmark from '~/components/Bookmark.vue'
 import navigationData from '~/data/navigation.json'
+import { mapState } from 'vuex'
 
 export default {
   async asyncData ({ params, store }) {
-    const categories = await Promise.all(
-      navigationData.category.map(async id => {
-        const data = await import(`~/data/category/${id}.json`)
-        const subCategory = await Promise.all(
-          data.subCategory.map(async subId =>
-            await import(`~/data/subCategory/${subId}.json`)
-          )
-        )
-        return { ...data, id, subCategory }
-      })
-    )
-    return {
-      menuData: categories,
-      heroData: { headline: 'Lets get started', text: 'Mingle around and find alternatives for every-day products' }
-    }
+
+    return
   },
   components: {
     Hero,
@@ -43,6 +31,11 @@ export default {
   },
   data () {
     return {}
+  },
+  computed: {
+    ...mapState({
+      topic: state => state.app.data
+    })
   },
   mounted () {
     const root = window.document.documentElement

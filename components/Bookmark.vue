@@ -1,18 +1,19 @@
 <template lang='pug'>
 div(
-  v-show='pinData.length > 0'
+  v-show='bookmarks.length > 0'
   class='container-bookmark'
 )
   div(class='bookmark')
     h2(class='bookmark__headline') Your favorites
     Collective(
-      :pinData='pinData'
+      :pinData='bookmarks'
       class='bookmark__collective'
     )
 </template>
 
 
 <script>
+import { mapGetters, mapActions } from 'vuex'
 import Collective from '~/components/Collective.vue'
 
 export default {
@@ -21,30 +22,28 @@ export default {
   },
   props: {},
   data () {
-    return {
-      isBrowser: false,
-      pinData: []
-    }
+    return {}
   },
-  computed: {},
+  computed: {
+    ...mapGetters({
+      bookmarks: 'catalog/bookmarks'
+    })
+  },
   methods: {
     async getBookmarks () {
       if (localStorage.getItem('pinBookmark')) {
         const bookmarkItem = JSON.parse(localStorage.getItem('pinBookmark'))
-        console.log(bookmarkItem)
         const pinIds = Object.keys(bookmarkItem)
-        const pin = await Promise.all(
-          pinIds.map(async id => {
-            const data = await import(`~/data/pin/${id}.json`)
-            return { ...data, id }
-          })
-        )
-        this.pinData = pin
+        await this.fetchBookmarks(pinIds)
       }
-    }
+    },
+
+
+    ...mapActions({
+      fetchBookmarks: 'catalog/fetchBookmarks'
+    })
   },
   mounted () {
-    this.isBrowser = true
     this.getBookmarks()
   }
 }

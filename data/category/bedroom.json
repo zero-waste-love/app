@@ -1,8 +1,11 @@
 {
-  "headline": "Bedroom",
-  "text": "Reducing waste in the bedroom is one of the easiest to achieve since there are already many alternatives available",
+  "handle": "",
   "subCategory": [
-    "dental"
-  ],
-  "color": "#FFC5A8"
+    "bed-and-textiles",
+    "clothes",
+    "condoms",
+    "furniture",
+    "lube-and-oils",
+    "scents"
+  ]
 }

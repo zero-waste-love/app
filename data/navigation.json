@@ -1,10 +1,7 @@
 {
-  "category": [
+  "topic": [
     "bathroom",
     "bedroom",
-    "kitchen",
-    "living-room",
-    "office",
-    "on-the-go"
+    "kitchen"
   ]
 }

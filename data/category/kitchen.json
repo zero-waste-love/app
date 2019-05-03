@@ -1,10 +1,13 @@
 {
-  "headline": "Kitchen",
-  "text": "Reducing waste in the bathroom is one of the easiest to achieve since there are already many alternatives available",
+  "handle": "",
   "subCategory": [
-    "body",
-    "dental",
-    "face"
-  ],
-  "color": "#F78985"
+    "appliances",
+    "kitchen-cleaning",
+    "cloth-and-textiles",
+    "cutlery",
+    "food-storage",
+    "on-the-go",
+    "tableware",
+    "supplies"
+  ]
 }

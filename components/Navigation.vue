@@ -2,11 +2,10 @@
 div(
   class='container-navigation'
 )
-
   nav(class='navigation')
     div(class='navigation__breadcrumb')
       nuxt-link(
-        v-show='$route.name === "index"'
+        v-show='$route.path === "/"'
         class='navigation__logo'
         to='/'
       )
@@ -15,7 +14,7 @@ div(
           class='navigation__logo-image'
         )
       nuxt-link(
-        v-show='$route.name === "category" || $route.name === "category-collection"'
+        v-show='!!$route.params.topic || !!$route.params.collection'
         to='/'
         class='navigation__link'
       )
@@ -23,21 +22,21 @@ div(
           v-lazy='logoImageSmall'
           class='navigation__logo-image navigation__logo-image--small'
         )
-        | &nbsp;Home&nbsp;
+        | &nbsp;{{ $t('links.home') }}&nbsp;
       nuxt-link(
-        v-show='$route.name === "category-collection"'
-        :to='"/" + $route.params.category'
+        v-show='$route.params.topic && $route.params.collection'
+        :to='"/" + $route.params.topic'
         class='navigation__link'
       )
         span(class='navigation__icon')
           IconChevron(class='navigation__icon-svg')
-        | &nbsp;{{ $route.params.category }}
+        | &nbsp;{{ $route.params.topic }}
 
     a(
       @click='copyText'
       :class='{ success: shareButtonText !== "Share" }'
       class='navigation__link navigation__button'
-    ) {{ shareButtonText }}
+    ) {{ $t('links.share') }}
 
     input(
       ref='shareInput'
