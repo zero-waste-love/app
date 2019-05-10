@@ -17,7 +17,8 @@ export default {
   async fetchCollection ({ commit }, handle) {
     try {
       const query = {
-        query: `product_type:${handle} AND tag:[test, temp]`
+        query: `product_type:${handle}`
+        // query: `product_type:${handle} AND tag:[test, temp]`
       }
       const productQuery = await shopifyClient.product.fetchQuery(query)
 
