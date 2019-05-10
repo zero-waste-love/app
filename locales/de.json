@@ -1,0 +1,206 @@
+{
+  "links": {
+    "home": "Start",
+    "share": "Teilen"
+  },
+  "index": {
+    "title": "Lass uns loslegen!",
+    "body": "Sieh dich um und entdecke Alternativen zu alltäglichen Produkten."
+  },
+  "topic": {
+    "bathroom": {
+      "title": "Badezimmer",
+      "body": "Reducing waste in the bathroom is one of the easiest to achieve since there are already many alternatives available"
+    },
+    "bedroom": {
+      "title": "Schlafzimmer",
+      "body": "Reducing waste in the bathroom is one of the easiest to achieve since there are already many alternatives available"
+    },
+    "kitchen": {
+      "title": "Küche",
+      "body": "Reducing waste in the bathroom is one of the easiest to achieve since there are already many alternatives available"
+    }
+  },
+  "category": {
+    "body": {
+      "title": "Körper"
+    },
+    "dental": {
+      "title": "Mundpflege"
+    },
+    "face": {
+      "title": "Gesicht"
+    },
+    "hair": {
+      "title": "Haare"
+    },
+    "nails": {
+      "title": "Nägel"
+    },
+    "toiletry": {
+      "title": "Toilettenartikel"
+    }
+  },
+  "subCategory": {
+    "appliances": {
+      "title": "Küchengeräte",
+      "body": "Es gibt viele alternative Küchengeräte, welche meist mehr Handarbeit fordern, dafür aber weitaus umweltfreundlicher sind als elektrische Geräte. Dennoch sollte man keinesfalls seine funktionierenden Küchengeräte sofort entsorgen, sondern sie gut pflegen, bis zum Ende gebrauchen und dann ordentlich recyclen."
+    },
+    "beard": {
+      "title": "Bartpflege",
+      "body": "Auch die Bartträger unter uns brauchen gute Pflege und auch dafür gibt es bereits gute zero-waste und low-waste Alternativen."
+    },
+    "bed-and-textiles": {
+      "title": "Bett & Textilien",
+      "body": "Ja, es gibt auch zero-waste und low-waste Betten! Lokal produziert und gefertigt sind sie eine sehr gute und qualitativ hochwertige Alternative zu klassischen Möbelhaus-Betten. Auch Textilien wie Bettlaken und Kissenbezüge gibt es bereits ökologisch nachhaltig produziert."
+    },
+    "body-accessories": {
+      "title": "Accessories",
+      "body": "Bürsten, Schwämme, Seifenablagen, hier kann man selbst kreativ werden, Altes umfunktionieren oder Neues erstehen."
+    },
+    "body-exfoliation-and-peeling": {
+      "title": "Peeling",
+      "body": "Peelings sind wichtig um tote Hautschuppen zu entfernen und sorgen für ein reines und gepflegtes Hautbild. Es gibt Peeling-Seifen, Cremes, Salze, Bürsten und Schwämme. Auch hier gibt es viele Möglichkeiten die Peelings selbst herzustellen oder müll-arme und zero-waste Produkte zu erwerben."
+    },
+    "brush": {
+      "title": "Bürste & Kamm",
+      "body": "Jeder Haartyp verlangt nach einer anderen Bürste oder einen Kamm, manche Haartypen sollten sogar lieber ohne Bürste gepflegt werden. Bei der Neuanschaffung eines Kamms oder einer Bürste gibt es gute zero-waste Alternativen, auch hier spielt die Verpackung eine Rolle, am besten ohne Verpackung."
+    },
+    "cleaning-and-make-up-removal": {
+      "title": "Reinigung & Make-up Entfernung",
+      "body": "Für die Gesichtsreinigung gibt es bereits sehr gute alternative Produkte von großen Herstellern und in lokalen Drogeriemärkten. Ebenso können wir online schon viele DIY Rezepte und Anleitungen finden. Viele Drogeriemärkte bieten schon wiederverwendbare Make-up-Waschlappen und umweltfreundlichere Alternativen für Wattepads an."
+    },
+    "cloth-and-textiles": {
+      "title": "Tücher & Textilien",
+      "body": "Auch für textile Abtrocknetücher, Küchenrolle, Backpapier und co. gibt es bereits super gute Weiterentwicklungen und Alternativen."
+    },
+    "clothes": {
+      "title": "Kleidung",
+      "body": "Kleidung sollte am besten getragen werden, bis sie kaputt ist oder nicht mehr passt und nicht wenn sie nicht mehr dem persönlichen Geschmack entspricht. Alternativ gibt is mittlerweile sehr viele Möglichkeiten Kleidung zu Spenden, Recyclen oder weiter zu verkaufen. Wenn es doch ein neues Kleidungsstück sein soll und kein Second-Hand, gibt es bereits viele neue Marken welche lokal & fair produzieren und auch auf eine umweltfreundliche Verpackung & Versand setzen."
+    },
+    "conditioner": {
+      "title": "Conditioner",
+      "body": "Fester Conditioner ist noch nicht sehr im deutschen Markt verbreitet, aber kommt zum Glück immer mehr. Es gibt bereits einige online oder lokal zu kaufen. Alternativ kann man auch flüssige Conditioner benutzen, wenn man auf die Verpackung achtet, auf Glasbehälter umsteigt und diese z.B. in lokalen verpackungsfreien Läden nachfüllt."
+    },
+    "condoms": {
+      "title": "Kondome",
+      "body": "Natürlich kommen Kondome immer in Verpackung, aber wir können darauf achten wo, wie und aus welchen Materialien sie hergestellt werden. Bei anderen Verhütungsmethoden kommt man aus Sicherheitsgründen meist natürlich nicht um Kunststoff-Verpackungen herum."
+    },
+    "cream-face-water-and-mask": {
+      "title": "Cremes, Gesichtswasser & Masken",
+      "body": "Egal ob selber machen, verpackungfrei oder mit nachhaltigen Verpackungen kaufen. Hier gibt es viele tolle alternative Produkte, da ist für jeden was dabei."
+    },
+    "cream": {
+      "title": "Creme",
+      "body": "Körperlotionen und feuchtigkeitsspendende Cremes sind die besten Freunde unserer Haut, deshalb möchten wir dir zero-waste Alternativen und do-it-yourself Rezepte zeigen. Nicht nur die Inhaltsstoffe sind wichtig, die Verpackung spielt auch eine große Rolle."
+    },
+    "cutlery": {
+      "title": "Besteck",
+      "body": "Die meisten von uns haben wohl Besteck aus Metall, welches so gut wie unverwüstbar ist. Dieses lässt sich auch sehr gut mitnehmen. Auf Plastikbesteck sollte man unbedingt verzichten. Eine gute Alternative zu Metall ist Holz. Dennoch sollte man sich oftmals überlegen ob man manche oder bestimmte Utensilien überhaupt wirklich benötigt."
+    },
+    "dental-accessories": {
+      "title": "Accessories",
+      "body": "Egal ob Zahnputzbecher, Seifenschale oder Make-up Aufbewahrung, wenn du nicht schon etwas hast, was du dafür verwenden kannst, wie einen kleinen Teller oder eine Tasse, kannst du gute Alternativen zu Plastik online und lokal kaufen."
+    },
+    "ear-cleaning": {
+      "title": "Ohren Reinigung",
+      "body": "Es muss nicht immer das Wattestäbchen sein, geschweigedenn, dass uns davon sowieso abgeraten wird. Es gibt Ohrenreiniger aus Metall, Textil und Holz. Diese können bei guter Pflege lange weiterverwendet werden und können sogar lebenslange Begleiter werden."
+    },
+    "face-exfoliation-and-peeling": {
+      "title": "Peeling",
+      "body": "Peelings sind wichtig um tote Hautschuppen zu entfernen und sorgen für ein reines und gepflegtes Hautbild. Es gibt Peeling-Seifen, Cremes, Salze, Bürsten und Schwämme. Auch hier gibt es viele Möglichkeiten die Peelings selbst herzustellen oder müll-arme und zero-waste Produkte zu erwerben."
+    },
+    "female-hygiene": {
+      "title": "Hygieneartikel für Frauen",
+      "body": "Alternative toothpastes are available as paste, powder, solid form and tablets which you can buy in local zero-waste stores or in online shops which are focussed on alternative products or even at Amazon."
+    },
+    "floss": {
+      "title": "Zahnseide",
+      "body": "Alternative toothpastes are available as paste, powder, solid form and tablets which you can buy in local zero-waste stores or in online shops which are focussed on alternative products or even at Amazon."
+    },
+    "food-storage": {
+      "title": "Lebensmittellagerung",
+      "body": "Alternative toothpastes are available as paste, powder, solid form and tablets which you can buy in local zero-waste stores or in online shops which are focussed on alternative products or even at Amazon."
+    },
+    "furniture": {
+      "title": "Möbel",
+      "body": "Alternative toothpastes are available as paste, powder, solid form and tablets which you can buy in local zero-waste stores or in online shops which are focussed on alternative products or even at Amazon."
+    },
+    "kitchen-cleaning": {
+      "title": "Putzmittel",
+      "body": "Alternative toothpastes are available as paste, powder, solid form and tablets which you can buy in local zero-waste stores or in online shops which are focussed on alternative products or even at Amazon."
+    },
+    "lips": {
+      "title": "Lippen",
+      "body": "Alternative toothpastes are available as paste, powder, solid form and tablets which you can buy in local zero-waste stores or in online shops which are focussed on alternative products or even at Amazon."
+    },
+    "lube-and-oils": {
+      "title": "Gleitmittel & Öle",
+      "body": "Alternative toothpastes are available as paste, powder, solid form and tablets which you can buy in local zero-waste stores or in online shops which are focussed on alternative products or even at Amazon."
+    },
+    "mask": {
+      "title": "Masken",
+      "body": "Alternative toothpastes are available as paste, powder, solid form and tablets which you can buy in local zero-waste stores or in online shops which are focussed on alternative products or even at Amazon."
+    },
+    "mouth-wash": {
+      "title": "Mundwasser",
+      "body": "Alternative toothpastes are available as paste, powder, solid form and tablets which you can buy in local zero-waste stores or in online shops which are focussed on alternative products or even at Amazon."
+    },
+    "scents": {
+      "title": "Düfte",
+      "body": "Alternative toothpastes are available as paste, powder, solid form and tablets which you can buy in local zero-waste stores or in online shops which are focussed on alternative products or even at Amazon."
+    },
+    "on-the-go": {
+      "title": "Unterwegs",
+      "body": "Alternative toothpastes are available as paste, powder, solid form and tablets which you can buy in local zero-waste stores or in online shops which are focussed on alternative products or even at Amazon."
+    },
+    "shampoo": {
+      "title": "Shampoo",
+      "body": "Alternative toothpastes are available as paste, powder, solid form and tablets which you can buy in local zero-waste stores or in online shops which are focussed on alternative products or even at Amazon."
+    },
+    "shaving": {
+      "title": "Haarentfernung",
+      "body": "Neben der weitverbreitesten Methode der Haarentfernung dem Rasieren, gibt es noch viele weitere Möglichkeiten ungewünschte Haare zu entfernen. Ein Epilierer mag vielleicht aus Plastik hergestellt sein, wird aber im Idealfall sehr oft wiederverwendet und hat bei guter Pflege ein langes Leben. Sugar Waxing kann ohne Probleme im DIY hergestellt und anschließend kompostiert werden. Auf Haarentfernungscremes sollte verzichtet werden, sind nicht nur aggressiv zur Haut sondern auch zur Umwelt."
+    },
+    "shower-gel-and-soap": {
+      "title": "Duschgel & Seife",
+      "body": "Wenn es eine Kategorie gibt in welcher es schon extrem viele Alternativen gibt, dann ist es diese! Die Auswahl ist sehr groß und da gibt es für jeden Geschmack etwas. Egal ob feste Seife oder Duschgels mit zurückbringbarer Verpackung. Zum kaufen oder selber machen, entdecke was dir gefällt!"
+    },
+    "styling": {
+      "title": "Styling",
+      "body": "Alternative toothpastes are available as paste, powder, solid form and tablets which you can buy in local zero-waste stores or in online shops which are focussed on alternative products or even at Amazon."
+    },
+    "sunscreen": {
+      "title": "Sonnenschutz",
+      "body": "Nicht nur für den Urlaub, sondern auch für die tägliche Pflege ist Sonnenschutz sehr wichtig. Auch hier gibt es einige zero-waste Alternativen zu kaufen oder zum Selbstmachen."
+    },
+    "supplies": {
+      "title": "Supplies",
+      "body": "Alternative toothpastes are available as paste, powder, solid form and tablets which you can buy in local zero-waste stores or in online shops which are focussed on alternative products or even at Amazon."
+    },
+    "tableware": {
+      "title": "Geschirr",
+      "body": "Alternative toothpastes are available as paste, powder, solid form and tablets which you can buy in local zero-waste stores or in online shops which are focussed on alternative products or even at Amazon."
+    },
+    "toilet-paper-and-bidet": {
+      "title": "Toilettenpapier & Bidet",
+      "body": "Alternative toothpastes are available as paste, powder, solid form and tablets which you can buy in local zero-waste stores or in online shops which are focussed on alternative products or even at Amazon."
+    },
+    "toiletry-cleaning": {
+      "title": "Putzmittel",
+      "body": "Alternative toothpastes are available as paste, powder, solid form and tablets which you can buy in local zero-waste stores or in online shops which are focussed on alternative products or even at Amazon."
+    },
+    "tongue-scraper": {
+      "title": "Zungenschaber",
+      "body": "Alternative toothpastes are available as paste, powder, solid form and tablets which you can buy in local zero-waste stores or in online shops which are focussed on alternative products or even at Amazon."
+    },
+    "tooth-brush": {
+      "title": "Zahnbürste",
+      "body": "Alternative toothpastes are available as paste, powder, solid form and tablets which you can buy in local zero-waste stores or in online shops which are focussed on alternative products or even at Amazon."
+    },
+    "tooth-paste": {
+      "title": "Zahnpasta",
+      "body": "Alternative toothpastes are available as paste, powder, solid form and tablets which you can buy in local zero-waste stores or in online shops which are focussed on alternative products or even at Amazon."
+    }
+  }
+}

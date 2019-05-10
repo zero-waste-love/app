@@ -16,7 +16,7 @@ export default {
   props: {},
   data () {
     return {
-      copywrite: 'Made with love in Munich & Portland, OR'
+      copywrite: 'Made with love in Munich, Germany & Portland, OR, USA'
     }
   },
   computed: {},
