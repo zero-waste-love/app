@@ -44,54 +44,71 @@
   "subCategory": {
     "appliances": {
       "title": "Appliances",
+      "body": "There are many alternative kitchen appliances, which usually require more manual work, but are far more environmentally friendly than electrical appliances. However, you should not dispose of your functioning kitchen appliances immediately, but take good care of them, use them to the end and then recycle them properly."
     },
     "beard": {
       "title": "Beard",
+      "body": "Also the beard bearers among us need good care and there are already good zero-waste and low-waste alternatives."
     },
     "bed-and-textiles": {
       "title": "Bed & Textiles",
+      "body": "Yes, there are also zero-waste and low-waste beds! Locally produced and manufactured, they are a very good and high-quality alternative to classic furniture store beds. Textiles such as sheets and pillowcases are already produced in an ecologically sustainable way."
     },
     "body-accessories": {
       "title": "Accessories",
+      "body": "Brushes, sponges, soap trays, here you can become creative yourself, convert old things or buy new ones."
     },
     "body-exfoliation-and-peeling": {
       "title": "Exfoliation & Peeling",
+      "body": "Peelings are important to remove dead skin flakes and ensure a clean and well-groomed skin appearance. There are peeling soaps, creams, salts, brushes and sponges. Also here there are many possibilities to make the peelings yourself or to buy low-waste and zero-waste products."
     },
     "brush": {
       "title": "Brush",
+      "body": "Each hair type requires a different brush or comb, some hair types should even be cared for without a brush. When you buy a new comb or brush, there are good zero-waste alternatives. Here, too, the packaging plays a role, preferably without packaging."
     },
     "cleaning-and-make-up-removal": {
       "title": "Cleaning & Make-up Removal",
+      "body": "For facial cleansing there are already very good alternative products from major manufacturers and local drugstores. We can also find many DIY recipes and instructions online. Many drugstores already offer reusable make-up washcloths and more environmentally friendly alternatives for cotton pads."
     },
     "cloth-and-textiles": {
       "title": "Cloth & Textiles",
+      "body": "There are already super good developments and alternatives for textile wipes, kitchen rolls, baking paper and the like."
     },
     "clothes": {
       "title": "Clothes",
+      "body": "Clothes should be worn best until they are broken or no longer fit and not when they no longer suit personal taste. Alternatively, there are now many ways to donate, recycle or resell clothing. If it should be a new garment and not a second-hand one, there are already many new brands which produce locally & fairly and also rely on environmentally friendly packaging & shipping."
     },
     "conditioner": {
       "title": "Conditioner",
+      "body": "Fester Conditioner is not yet very widespread in the market, but fortunately comes more and more. There are already some to buy online or locally. Alternatively, you can also use liquid conditioners, if you pay attention to the packaging, switch to glass containers and refill them e.g. in local packaging-free shops."
     },
     "condoms": {
       "title": "Condoms",
+      "body": "Naturally condoms always come in packaging, but we can pay attention to where, how and from which materials they are made. With other contraceptive methods, for safety reasons, there is usually no getting around plastic packaging."
     },
     "cream-face-water-and-mask": {
       "title": "Cream, Face Water & Mask",
+      "body": "No matter whether you make it yourself, buy it without packaging or with sustainable packaging. There are many great alternative products, there is something for everyone."
     },
     "cream": {
       "title": "Cream",
+      "body": "Body lotion and moisterizing creams are our skins’ best friends, that’s why we would like to introduce you to zero waste alternatives and do-it-yourself recipes. The ingredients are important, yet the packaging plays a big role, too."
     },
     "cutlery": {
       "title": "Cutlery",
+      "body": "Most of us probably have cutlery made of metal, which is as good as indestructible. This is also very easy to take with you. One should absolutely do without plastic cutlery. A good alternative to metal is wood. Nevertheless one should often consider whether one really needs some or certain utensils at all."
     },
     "dental-accessories": {
       "title": "Accessories",
+      "body": "Whether it's a toothbrush cup, soap dish or make-up storage, if you don't already have something to use for it, like a small plate or cup, you can buy good alternatives to plastic online and locally."
     },
     "ear-cleaning": {
       "title": "Ear Cleaning",
+      "body": "It doesn't always have to be the cotton swab, let alone being advised against it anyway. There are ear cleaners made of metal, textile and wood. With good care they can be used for a long time and can even become lifelong companions."
     },
     "face-exfoliation-and-peeling": {
       "title": "Exfoliation & Peeling",
+      "body": "Peelings are important to remove dead skin flakes and ensure a clean and well-groomed skin appearance. There are peeling soaps, creams, salts, brushes and sponges. Also here there are many possibilities to make the peelings yourself or to buy low-waste and zero-waste products."
     },
     "female-hygiene": {
       "title": "Female Hygiene",
@@ -143,9 +160,11 @@
     },
     "shaving": {
       "title": "Shaving",
+      "body": "In addition to the most common method of hair removal, shaving, there are many other ways to remove unwanted hair. An epilator may be made of plastic, but ideally it will be reused very often and will have a long life if well cared for. Sugar Waxing can be easily produced in DIY and then composted. Hair removal creams should not be used, they are not only aggressive to the skin but also to the environment."
     },
     "shower-gel-and-soap": {
       "title": "Shower Gel & Soap",
+      "body": "If there is a category in which there are already extremely many alternatives, then it is this one! The selection is very big and there is something for every taste. Whether solid soap or shower gel with returnable packaging. To buy or make yourself, discover what you like!"
     },
     "styling": {
       "title": "Styling",
@@ -153,6 +172,7 @@
     },
     "sunscreen": {
       "title": "Sunscreen",
+      "body": "Sun protection is very important not only for vacation, but also for the daily care. Here, too, there are many zero-waste alternatives to buy or do it yourself."
     },
     "supplies": {
       "title": "Supplies",

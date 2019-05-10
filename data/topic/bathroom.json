@@ -1,6 +1,7 @@
 {
   "handle": "bathroom",
   "color": "#B6D7D8",
+  "imageHero": "illu-topic-bathroom",
   "imageIcon": "illu-topic-bathroom",
   "category": [
     "body",
