@@ -118,6 +118,10 @@ export default {
   height: 100%
   overflow: hidden
   border-radius: 6px
+  padding: $unit*2
+
+  &:hover
+    background: $grey
 
 .pin
   @extend %card-container
@@ -127,8 +131,7 @@ export default {
   grid-template-columns: 1fr auto
   grid-template-rows: auto auto
   grid-gap: $unit*4 $unit*2
-  padding: $unit*2
-  background: rgba(255, 255, 255, 1)
+  // background: rgba(255, 255, 255, 1)
   +mq-m
     grid-template-rows: unset
     grid-template-columns: unset
@@ -137,7 +140,7 @@ export default {
   &__image
     width: $unit*7
     display: none
-    box-shadow: $unit $unit $unit rgba(34, 34, 34, 0.1)
+    // box-shadow: $unit $unit $unit rgba(34, 34, 34, 0.1)
     border-radius: 6px
     justify-self: end
     grid-row: 1 / 2
@@ -156,6 +159,7 @@ export default {
       width: 100%
 
   &__body
+    padding: 0 $unit
     display: flex
     flex-direction: column
     text-overflow: ellipsis
@@ -191,6 +195,8 @@ export default {
     grid-gap: $unit*2
     align-self: end
     align-items: center
+    padding: 0 $unit $unit $unit
+    display: none
     +mq-m
       grid-row: unset
       grid-column: unset
@@ -203,7 +209,7 @@ export default {
     width: min-content
     white-space: nowrap
     background: $pri-cl
-    box-shadow: $unit $unit $unit rgba(34, 34, 34, 0.1)
+    // box-shadow: $unit $unit $unit rgba(34, 34, 34, 0.1)
 
   &__icon
     @extend %flex--row-center
