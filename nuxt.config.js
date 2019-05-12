@@ -58,6 +58,10 @@ module.exports = {
         {
           code: 'en',
           iso: 'en-US'
+        },
+        {
+          code: 'de',
+          iso: 'de-DEU'
         }
       ],
       defaultLocale: 'en',
@@ -65,7 +69,8 @@ module.exports = {
       vueI18n: {
         fallbackLocale: 'en',
         messages: {
-          en: require('./locales/en.json')
+          en: require('./locales/en.json'),
+          de: require('./locales/de.json')
         },
         silentTranslationWarn: true
       }

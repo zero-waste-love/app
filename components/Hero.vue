@@ -22,10 +22,7 @@ export default {
     }
   },
   data () {
-    return {
-      headline: 'Lets get started',
-      text: 'Mingle around and find alternatives for every-day products'
-    }
+    return {}
   },
   computed: {},
   methods: {}

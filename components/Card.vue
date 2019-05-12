@@ -2,9 +2,10 @@
 div(class='container-card')
 
   nuxt-link(
-    :to='{ path: cardData.path }'
+    :to='localePath({ name: cardData.routeName, params: cardData.routeParams })'
     class='card'
   )
+    pre {{ $route.params }}
     h3(
       v-if='cardData.headline'
       class='card__headline'
