@@ -2,10 +2,6 @@
   "handle": "office",
   "color": "#C9CCE9",
   "imageHero": "",
-  "imageIcon": "",
-  "category": [
-    "body",
-    "dental",
-    "face"
-  ]
+  "imageIcon": "illu-topic-office",
+  "category": []
 }

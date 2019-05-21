@@ -68,6 +68,7 @@ export default {
   +mq-s
     flex: unset
     padding: unset
+    padding: $unit*2 0
 
   &__list
 

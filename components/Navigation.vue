@@ -9,19 +9,15 @@ div(
         class='navigation__logo'
         to='/'
       )
-        img(
-          v-lazy='logoImage'
-          class='navigation__logo-image'
-        )
+        span(class='navigation__icon-logo')
+          IconLogo(class='navigation__icon-logo-svg')
       nuxt-link(
         v-show='!!$route.params.topic || !!$route.params.collection'
         to='/'
         class='navigation__link'
       )
-        img(
-          v-lazy='logoImageSmall'
-          class='navigation__logo-image navigation__logo-image--small'
-        )
+        span(class='navigation__icon-logo')
+          IconLogoMini(class='navigation__icon-logo-svg')
         | &nbsp;{{ $t('links.home') }}&nbsp;
       nuxt-link(
         v-show='$route.params.topic && $route.params.collection'
@@ -32,55 +28,28 @@ div(
           IconChevron(class='navigation__icon-svg')
         | &nbsp;{{ $route.params.topic }}
 
-    a(
-      @click='copyText'
-      :class='{ success: shareButtonText !== "Share" }'
-      class='navigation__link navigation__button'
-    ) {{ $t('links.share') }}
-
-    input(
-      ref='shareInput'
-      id='shareInput'
-      class='navigation__share-input'
-      :value='shareURL'
-      readonly
-    )
 </template>
 
 
 <script>
-import IconLogo from '~/assets/images/iconLogo.png'
+import IconLogo from '~/assets/svg/icon-logo.svg'
 import IconChevron from '~/assets/svg/iconChevron.svg'
-import IconLogoSmall from '~/assets/images/iconLogoSmall.png'
+import IconLogoMini from '~/assets/svg/icon-logo-mini.svg'
 import { mapState, mapGetters, mapMutations } from 'vuex'
 
 
 export default {
   components: {
+    IconLogo,
+    IconLogoMini,
     IconChevron
   },
   props: {},
   data () {
-    return {
-      logoImage: IconLogo,
-      logoImageSmall: IconLogoSmall,
-      shareButtonText: 'Share',
-      shareURL: 'https://www.zerowaste.love'
-    }
+    return {}
   },
   computed: {},
-  methods: {
-    copyText () {
-      this.shareButtonText = 'Link copied 🎉'
-      this.$refs.shareInput.select()
-      // copy input value to clipboard
-      document.execCommand('copy')
-      // deselect input
-      if (document.selection) document.selection.empty()
-      else if (window.getSelection) window.getSelection().removeAllRanges()
-      setTimeout(() => this.shareButtonText = 'Share', 2000)
-    }
-  }
+  methods: {}
 }
 </script>
 
@@ -102,16 +71,6 @@ export default {
   &__breadcrumb
     display: flex
 
-
-  &__logo
-
-    &-image
-      height: $unit*2
-      mix-blend-mode: luminosity
-
-      &--small
-        transform: translateY(2px)
-
   &__link
     font-weight: $fw-bold
     text-transform: capitalize
@@ -123,6 +82,11 @@ export default {
     &-svg
       width: $unit*1.5
       transform: rotate(-90deg)
+
+    &-logo
+
+      &-svg
+        height: $unit*2
 
   &__button
     justify-self: end

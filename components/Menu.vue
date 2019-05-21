@@ -12,6 +12,9 @@ div(class='container-menu')
           :style='{ backgroundColor: card.color }'
           class='menu__card'
         )
+    h2(
+      class='menu__headline'
+    ) ...more topics coming soon
 </template>
 
 
@@ -50,12 +53,21 @@ export default {
     grid-template-columns: repeat(1, 1fr)
     grid-gap: $unit*3
     +mq-s
-      grid-template-rows: repeat(2, $unit*20)
+      grid-template-rows: repeat(1, $unit*20)
       grid-template-columns: repeat(2, 1fr)
     +mq-m
       grid-template-columns: repeat(3, 1fr)
 
   &__item
+    display: flex
 
   &__card
+    flex: 1
+
+  &__headline
+    text-align: right
+    font-weight: $fw-bold
+    font-size: $fs
+    color: $dark
+    margin-top: $unit
 </style>

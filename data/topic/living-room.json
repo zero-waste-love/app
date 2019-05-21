@@ -2,10 +2,6 @@
   "handle": "living-room",
   "color": "#D6D8B6",
   "imageHero": "",
-  "imageIcon": "",
-  "category": [
-    "body",
-    "dental",
-    "face"
-  ]
+  "imageIcon": "illu-topic-living-room",
+  "category": []
 }

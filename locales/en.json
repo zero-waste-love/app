@@ -19,6 +19,18 @@
     "kitchen": {
       "title": "Kitchen",
       "body": "In the kitchen we can easily become masters of reusing items, find environment friendly solutions for appliances and switch purposes of objects."
+    },
+    "living-room": {
+      "title": "Living Room",
+      "body": ""
+    },
+    "office": {
+      "title": "Office",
+      "body": ""
+    },
+    "on-the-go": {
+      "title": "On the go",
+      "body": ""
     }
   },
   "category": {

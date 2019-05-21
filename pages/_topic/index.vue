@@ -4,8 +4,15 @@ main(
 )
 
   section(class='page')
+    div(class='page__hero-container')
+      DynamicIcon(
+        v-if='$route.params.topic'
+        :icon='`illu-topic-${$route.params.topic}-hero`'
+        class='page__hero-image'
+      )
     Hero(
       :heroData='{ headline: $t("topic." + $route.params.topic + ".title"), text: $t("topic." + $route.params.topic + ".body") }'
+      class='page__hero'
     )
     ul(class='page__list')
       li(
@@ -25,10 +32,10 @@ main(
 
 
 <script>
-import { mapActions } from 'vuex'
+import { mapState, mapActions } from 'vuex'
 import Hero from '~/components/Hero.vue'
 import Category from '~/components/Category.vue'
-import { mapState } from 'vuex'
+import DynamicIcon from '~/components/DynamicIcon.vue'
 
 export default {
   async asyncData ({ params, store }) {
@@ -51,7 +58,8 @@ export default {
   },
   components: {
     Hero,
-    Category
+    Category,
+    DynamicIcon
   },
   data () {
     return {}
@@ -80,10 +88,26 @@ export default {
 }
 </script>
 
-<style lang='sass'>
+<style lang='sass' scoped>
 .container-page
 
 .page
+
+  &__hero
+    padding-top: $unit*5 !important
+    +mq-s
+      padding-top: $unit*10 !important
+
+  &__hero-container
+    width: 90%
+    max-width: 600px
+    margin: $unit*5 auto 0 auto
+    +mq-m
+      width: 50%
+
+  &__hero-image
+    mix-blend-mode: multiply
+
 
   &__list
     display: grid

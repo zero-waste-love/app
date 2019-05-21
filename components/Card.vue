@@ -1,8 +1,10 @@
 <template lang='pug'>
-div(class='container-card')
-
+div(
+  :class='{ "container-card--coming-soon": cardData.routeName === "topic" && comingSoon.includes(cardData.id) }'
+  class='container-card'
+)
   nuxt-link(
-    :to='localePath({ name: cardData.routeName, params: cardData.routeParams })'
+    :to='cardData.routeName === "topic" && comingSoon.includes(cardData.id) ? "#" : localePath({ name: cardData.routeName, params: cardData.routeParams })'
     class='card'
   )
     h3(
@@ -32,7 +34,13 @@ export default {
     }
   },
   data () {
-    return {}
+    return {
+      comingSoon: [
+        'living-room',
+        'office',
+        'on-the-go'
+      ]
+    }
   },
   computed: {},
   methods: {}
@@ -42,13 +50,21 @@ export default {
 
 <style lang='sass' scoped>
 .container-card
-  height: 100%
+  display: flex
   box-shadow: $unit $unit $unit rgba(34, 34, 34, 0.1)
   overflow: hidden
   border-radius: 6px
 
+  &--coming-soon
+    opacity: 0.5
+    box-shadow: unset
+
+    & .card
+      cursor: default
+
 .card
   @extend %card-container
+  flex: 1
   min-height: $unit*20
   display: grid
   align-items: end
@@ -59,7 +75,6 @@ export default {
     grid-column: 1 / 2
     font-weight: $fw-bold
     font-size: $fs1
-
 
   &__text
     @extend %text-copy

@@ -119,6 +119,7 @@ export default {
   overflow: hidden
   border-radius: 6px
   padding: $unit*2
+  background: $white
 
   &:hover
     background: $grey

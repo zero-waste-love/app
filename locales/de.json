@@ -19,6 +19,18 @@
     "kitchen": {
       "title": "Küche",
       "body": "In der Küche können wir leicht Meisterinnen und Meister der Wiederverwendung von Gegenständen werden, umweltfreundliche Lösungen für Geräte finden und Objekte austauschen."
+    },
+    "living-room": {
+      "title": "Living Room",
+      "body": ""
+    },
+    "office": {
+      "title": "Office",
+      "body": ""
+    },
+    "on-the-go": {
+      "title": "On the go",
+      "body": ""
     }
   },
   "category": {
