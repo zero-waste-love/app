@@ -9,7 +9,7 @@ div(class='container-menu')
       )
         Card(
           :cardData='{ headline: $t("topic." + card.handle + ".title"), id: card.handle, path: card.handle, imageIcon: card.imageIcon, routeName: "topic", routeParams: { topic: card.handle } }'
-          :style='{ backgroundColor: card.color }'
+          :style='{ backgroundColor: `rgba(${card.color}, 1)` }'
           class='menu__card'
         )
     h2(

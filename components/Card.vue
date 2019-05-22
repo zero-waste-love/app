@@ -69,7 +69,6 @@ export default {
   display: grid
   align-items: end
   padding: $unit*4
-  background: rgba(255, 255, 255, 0.6)
 
   &__headline
     grid-column: 1 / 2

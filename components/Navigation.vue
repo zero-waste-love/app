@@ -1,6 +1,7 @@
 <template lang='pug'>
 div(
   class='container-navigation'
+  :style='{ background: `rgba(${activeColor}, 0.9)` }'
 )
   nav(class='navigation')
     div(class='navigation__breadcrumb')
@@ -48,7 +49,11 @@ export default {
   data () {
     return {}
   },
-  computed: {},
+  computed: {
+    ...mapGetters({
+      activeColor: 'app/activeColor'
+    })
+  },
   methods: {}
 }
 </script>
@@ -60,7 +65,7 @@ export default {
   z-index: 99
   top: 0
   padding: $unit 0
-  background: $pri-cl
+  transition: background-color 500ms
 
 .navigation
   @extend %container-content

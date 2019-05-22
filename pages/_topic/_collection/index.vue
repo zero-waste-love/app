@@ -45,11 +45,6 @@ export default {
   mounted () {},
   methods: {},
   async beforeRouteEnter (to, from, next) {
-    if (!!to.params.topic) {
-      // const topic = await import(`~/data/topic/${to.params.topic}.json`)
-      // const root = window.document.documentElement
-      // root.style.setProperty('--background-color', topic.color)
-    }
     next()
   }
 }

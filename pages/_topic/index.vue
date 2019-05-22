@@ -39,22 +39,7 @@ import DynamicIcon from '~/components/DynamicIcon.vue'
 
 export default {
   async asyncData ({ params, store }) {
-    // const category = await import(`~/data/topic/${params.category}.json`)
-    // const subCategory = await Promise.all(
-    //   category.subCategory.map(async id => {
-    //     const data = await import(`~/data/category/${id}.json`)
-    //     const collection = await Promise.all(
-    //       data.collection.map(async collectionId =>
-    //         await import(`~/data/subCategory/${collectionId}.json`)
-    //       )
-    //     )
-    //     return { ...data, id, collection: [...collection] }
-    //   })
-    // )
-    // return {
-    //   category: [],
-    //   subCategory: []
-    // }
+    return
   },
   components: {
     Hero,
@@ -75,16 +60,9 @@ export default {
       topic: state => state.app.data
     })
   },
-  mounted () {},
-  methods: {},
-  async beforeRouteEnter (to, from, next) {
-    if (!!to.params.topic) {
-      const topic = await import(`~/data/topic/${to.params.topic}.json`)
-      const root = window.document.documentElement
-      root.style.setProperty('--background-color', topic.color)
-    }
-    next()
-  }
+  mounted () {
+  },
+  methods: {}
 }
 </script>
 

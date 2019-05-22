@@ -76,4 +76,5 @@ export default {
   &__item
 
   &__card
+    background: rgba(255, 255, 255, 0.6)
 </style>

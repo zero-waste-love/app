@@ -1,5 +1,8 @@
 <template lang='pug'>
-div(class='vue-app')
+div(
+  class='vue-app'
+  :style='{ background: `rgba(${activeColor}, 1)` }'
+)
 
   Navigation(class='vue-app__view')
 
@@ -12,7 +15,7 @@ div(class='vue-app')
 <script>
 import Navigation from '~/components/Navigation.vue'
 import Footer from '~/components/Footer.vue'
-import { mapState } from 'vuex'
+import { mapState, mapGetters } from 'vuex'
 
 
 export default {
@@ -26,7 +29,12 @@ export default {
   computed: {
     error () {
       return this.$store.state.error
-    }
+    },
+
+
+    ...mapGetters({
+      activeColor: 'app/activeColor'
+    })
   }
 }
 </script>
@@ -37,7 +45,7 @@ export default {
   display: grid
   grid-template-rows: auto 1fr auto
   min-height: 100vh
-  background: $pri-cl
+  transition: background-color 500ms
 
   &__view
 
