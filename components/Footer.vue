@@ -3,8 +3,14 @@ div(class='container-footer')
 
   footer(class='footer')
     div(class='footer__links')
-      a(class='footer__link') Imprint
-      a(class='footer__link') Privacy Policy
+      nuxt-link(
+        to='/pages/privacy-policy'
+        class='footer__link'
+      ) Imprint
+      nuxt-link(
+        to='/pages/privacy-policy'
+        class='footer__link'
+      ) Privacy Policy
     p(class='footer__copywrite') {{ copywrite }}
 </template>
 

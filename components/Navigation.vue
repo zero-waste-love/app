@@ -13,7 +13,7 @@ div(
         span(class='navigation__icon-logo')
           IconLogo(class='navigation__icon-logo-svg')
       nuxt-link(
-        v-show='!!$route.params.topic || !!$route.params.collection'
+        v-show='!!$route.params.topic || !!$route.params.collection || $route.path.includes("/pages/")'
         to='/'
         class='navigation__link'
       )
